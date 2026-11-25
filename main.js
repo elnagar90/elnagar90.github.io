@@ -1,0 +1,1 @@
+(async()=>{var n=13,s="";for(var i=0;i<n;i++){var r=await fetch("part"+String(i).padStart(2,"0")+".txt");s+=await r.text()}var u=URL.createObjectURL(new Blob([s],{type:"text/javascript"})),e=document.createElement("script");e.src=u;document.body.appendChild(e)})();
